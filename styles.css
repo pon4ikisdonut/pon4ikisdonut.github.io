@@ -476,11 +476,13 @@ html[data-theme="light"] .theme-icon-moon { display: none; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 4px 8px;
+  gap: 6px;
+  padding: 5px 10px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
   background-color: var(--bg-subtle);
   font-size: 11px;
+  font-weight: 500;
   color: var(--text);
   letter-spacing: 0.04em;
   transition: border-color var(--transition-fast), background-color var(--transition-fast);
@@ -496,8 +498,10 @@ html[data-theme="light"] .theme-icon-moon { display: none; }
 }
 
 .icon--chip {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .icon--external {
@@ -878,6 +882,56 @@ html[data-theme="light"] .icon:not(.avatar-img) {
   font-size: 12px;
   color: var(--text-soft);
   font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+
+.hwbot-proof-card {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-card);
+  padding: 16px;
+  margin-top: 14px;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+@media (max-width: 768px) {
+  .hwbot-proof-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.hwbot-proof-card:hover {
+  border-color: var(--accent);
+  background-color: var(--bg-card-hover);
+}
+
+.hwbot-proof-media {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-subtle);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hwbot-proof-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.hwbot-proof-media:hover .hwbot-proof-img {
+  transform: scale(1.03);
+}
+
+.hwbot-proof-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .hate-grid {
@@ -1345,6 +1399,7 @@ body.aero-theme .project-card,
 body.aero-theme .wishlist-card,
 body.aero-theme .hardware-item,
 body.aero-theme .hwbot-card,
+body.aero-theme .hwbot-proof-card,
 body.aero-theme .hate-card {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(205, 238, 255, 0.88) 100%);
   border: 1px solid #73bdef;
@@ -1359,6 +1414,7 @@ body.aero-theme .project-card:hover,
 body.aero-theme .wishlist-card:hover,
 body.aero-theme .hardware-item:hover,
 body.aero-theme .hwbot-card:hover,
+body.aero-theme .hwbot-proof-card:hover,
 body.aero-theme .hate-card:hover {
   border-color: #0879dc;
   box-shadow:
