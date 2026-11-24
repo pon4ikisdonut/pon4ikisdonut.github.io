@@ -7,18 +7,24 @@
     <meta
       name="description"
       data-i18n-attr="content:meta.desc"
-      content="Личный сайт pon4ikisdonut: системное администрирование, низкоуровневая разработка и проекты."
+      content="гагагага да да это мой сайт я крутой да да ахахахахах."
     />
-    <meta name="theme-color" content="#0b0e14" />
+    <meta name="theme-color" content="#0d1117" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=200" />
+    <link rel="stylesheet" href="styles.css?v=100" />
   </head>
   <body>
+    <div class="bg-glow"></div>
+
+  <aside class="cn-notice" id="cn-notice" role="status" aria-live="polite" hidden>
+    <span class="cn-notice__text">感谢中国政府解除对该网站的封锁。</span>
+    <button class="cn-notice__close" id="cn-notice-close" type="button" aria-label="关闭通知" title="关闭">×</button>
+  </aside>
+
     <main class="page">
       <div class="shell">
 
-        <!-- Header -->
-        <header class="site-header">
+        <header class="site-header animate-in">
           <div class="identity">
             <div class="avatar">
               <img src="ava.jpg" alt="Avatar" class="avatar-img" />
@@ -27,7 +33,7 @@
               <div class="nickname">pon4ikisdonut</div>
               <div class="status-line">
                 <span class="status-pill" data-i18n="header.role">System Administrator</span>
-                <a href="/wishlist/" class="status-pill status-pill--link" title="Список желаний / Wishlist">🎁 Wishlist</a>
+                <a href="/wishlist/" class="status-pill status-pill--link" title="Список желаний">🎁 Wishlist</a>
               </div>
             </div>
           </div>
@@ -43,50 +49,34 @@
           </div>
         </header>
 
-        <!-- Minimalist Navigation Bar -->
-        <nav class="site-nav" aria-label="Main navigation">
-          <a href="/" class="nav-link active">Главная</a>
-          <a href="#about" class="nav-link">О себе</a>
-          <a href="#projects" class="nav-link">Проекты</a>
-          <a href="#stack" class="nav-link">Железо &amp; Стек</a>
-          <a href="#contacts" class="nav-link">Контакты</a>
-          <a href="/wishlist/" class="nav-link nav-link--accent">Wishlist 🎁</a>
-        </nav>
-
-        <!-- About Section -->
-        <section class="section" id="about">
-          <h2 class="section-title" data-i18n="about.title">// About</h2>
+        <section class="section animate-in" id="about">
+          <h2 class="section-title" data-i18n="about.title">About</h2>
           <div class="section-body">
-            <div class="chips">
-              <span class="chip" aria-label="C" title="C / низкоуровневая разработка">
-                <img src="c.svg" alt="" class="icon icon--chip" />
-                <span>C</span>
-              </span>
-              <span class="chip" aria-label="Python" title="Python">
-                <img src="python.svg" alt="" class="icon icon--chip" />
-                <span>Python</span>
-              </span>
-              <span class="chip" aria-label="System administration" title="System administration / DevOps">
-                <img src="sysadm.png" alt="" class="icon icon--chip" />
-                <span>Sysadmin &amp; DevOps</span>
-              </span>
+            <div class="about-content">
+              <div class="chips">
+                <span class="chip" aria-label="C" title="C / низкоуровневая разработка">
+                  <img src="c.svg" alt="" class="icon icon--chip" />
+                </span>
+                <span class="chip" aria-label="Python" title="Python">
+                  <img src="python.svg" alt="" class="icon icon--chip" />
+                </span>
+                <span class="chip" aria-label="System administration" title="System administration / DevOps">
+                  <img src="sysadm.png" alt="" class="icon icon--chip" />
+                </span>
+              </div>
+              <p class="section-text" data-i18n="about.text">
+                Работаю с низкоуровневой разработкой на C, системным администрированием и
+                инфраструктурой. Люблю собирать свои сервера и поднимать игровые проекты.
+              </p>
             </div>
-            <p class="section-text" data-i18n="about.text">
-              Работаю с низкоуровневой разработкой на C, системным администрированием и
-              инфраструктурой. Люблю собирать свои сервера и поднимать игровые проекты.
-            </p>
-            <p class="section-text subtle" data-i18n="about.subtle">
-              Интересы: собственная 64‑битная ОС, серверные платформы, сети 10G, игры, музыка и железо.
-            </p>
           </div>
+          <p class="section-text subtle" data-i18n="about.subtle">
+            Интересы: Разработка всякой хуйни, системное администрирование, игры, музыка, мемы и всякая подобная залупа.
+          </p>
         </section>
 
-        <!-- Projects Section -->
-        <section class="section" id="projects">
-          <div class="section-header-row">
-            <h2 class="section-title" data-i18n="projects.title">// Projects</h2>
-            <span class="status-pill">5 проектов</span>
-          </div>
+        <section class="section animate-in" id="projects">
+          <h2 class="section-title" data-i18n="projects.title">Projects</h2>
           <div class="projects-grid">
 
             <article class="project-card">
@@ -101,7 +91,7 @@
                 вывод через framebuffer, сейчас на стадии ранней альфы.
               </p>
               <p class="project-text subtle" data-i18n="projects.kyroos.subtle">
-                В активной разработке: планируется нормальная графика, звук и сетевая подсистема.
+                В активной разработке: планируется нормальная графика, звук и сетевая подсистема, а так же куча всего остального
               </p>
               <div class="project-actions">
                 <a
@@ -112,7 +102,6 @@
                   aria-label="Открыть KyroOS на GitHub"
                   title="Открыть KyroOS на GitHub"
                 >
-                  <span>GitHub</span>
                   <img src="strelka.png" alt="" class="icon icon--external" />
                 </a>
               </div>
@@ -129,8 +118,14 @@
                 Язык программирования‑прослойка над Python, который сохраняет структуру и простоту
                 оригинала, но использует русскую раскладку для ключевых слов и операторов.
               </p>
+              <p class="project-text subtle" data-i18n="projects.zpsr.subtle">
+                ZPSR расшифровывается как «Zaebis Pisat Suka na Russkom» — это
+                эксперимент в дизайне языков и попытка сделать код максимально «нативным» для
+                неанглийской раскладки клавиатуры.
+              </p>
               <p class="project-text subtle" data-i18n-html="projects.zpsr.example">
-                Пример: <code>зкште("Write anything"); еуче = штзге(); зкште(еуче)</code>
+                Пример синтаксиса:
+                <code>зкште("Write anything"); еуче = штзге(); зкште(еуче)</code>
               </p>
               <div class="project-actions">
                 <a
@@ -141,7 +136,6 @@
                   aria-label="Открыть zpsr на GitHub"
                   title="Открыть zpsr на GitHub"
                 >
-                  <span>GitHub</span>
                   <img src="strelka.png" alt="" class="icon icon--external" />
                 </a>
               </div>
@@ -158,7 +152,7 @@
                 Список фембоев. Просто список. Просто фембои. Ничего лишнего — заходишь, смотришь, уходишь (или не уходишь).
               </p>
               <p class="project-text subtle" data-i18n-html="projects.femboy.subtle">
-                Хостится на <code>femboy.pp.ua</code>.
+                Хостится на <code>femboy.pp.ua</code>. Контент пополняется по мере поступления.
               </p>
               <div class="project-actions">
                 <a
@@ -166,10 +160,10 @@
                   href="https://femboy.pp.ua/"
                   target="_blank"
                   rel="noopener"
+                  data-i18n-attr="aria-label:projects.femboy.open;title:projects.femboy.open"
                   aria-label="Открыть femboy.pp.ua"
                   title="Открыть femboy.pp.ua"
                 >
-                  <span>Сайт</span>
                   <img src="strelka.png" alt="" class="icon icon--external" />
                 </a>
               </div>
@@ -186,7 +180,7 @@
                 Официальный чат ОПГ «Радуга». Общение, ламповая атмосфера и движ без духоты.
               </p>
               <p class="project-text subtle" data-i18n-html="projects.raduga.subtle">
-                Залетай: <code>t.me/OPG_R4duga</code>
+                Залетай в чат: <code>t.me/OPG_R4duga</code>
               </p>
               <div class="project-actions">
                 <a
@@ -194,6 +188,7 @@
                   href="https://t.me/OPG_R4duga"
                   target="_blank"
                   rel="noopener"
+                  data-i18n-attr="aria-label:projects.raduga.open;title:projects.raduga.open"
                   aria-label="Вступить в чат ОПГ «Радуга»"
                   title="Вступить в чат ОПГ «Радуга»"
                 >
@@ -211,10 +206,7 @@
                 <span class="project-tag">Хотелки · Железо</span>
               </header>
               <p class="project-text">
-                Список комплектующих и девайсов: серверная платформа LGA3647, рабочее место с 3 мониторами, сетевое 10G оборудование и гаджеты.
-              </p>
-              <p class="project-text subtle">
-                Размещено на <code>/wishlist</code>
+                Список желаний и апгрейдов: серверная платформа LGA3647, рабочее место на 3 монитора, сетевое 10G оборудование, девайсы и софт.
               </p>
               <div class="project-actions">
                 <a
@@ -228,17 +220,13 @@
                 </a>
               </div>
             </article>
-
           </div>
         </section>
 
-        <!-- Hardware & Stack Section -->
-        <section class="section" id="stack">
-          <div class="section-header-row">
-            <h2 class="section-title" data-i18n="hardware.title">// Hardware &amp; Stack</h2>
-            <span class="status-pill">Конфигурация</span>
-          </div>
+        <section class="section animate-in" id="stack">
+          <h2 class="section-title" data-i18n="hardware.title">Hardware &amp; Stack</h2>
           <div class="section-body">
+
             <div class="hardware-grid">
 
               <div class="hardware-item hw-dead" data-i18n-attr="data-dead-label:hw.dead.label" data-dead-label="МЁРТВ.">
@@ -320,16 +308,15 @@
           </div>
         </section>
 
-        <!-- Contacts Section & Footer -->
-        <footer class="site-footer" id="contacts">
+        <footer class="site-footer animate-in" id="contacts">
           <div class="footer-main">
             <div class="footer-left">
-              <div class="footer-title" data-i18n="footer.title">// Contacts</div>
+              <div class="footer-title" data-i18n="footer.title">Contacts</div>
               <p class="section-text subtle" data-i18n="footer.text">
-                Я открыт к вопросам. Пишите по технической части или сотрудничеству.
+                Я просто открыт к вопросам. Пишите по тех. части, или просто так. (если вы фанат Debian то не пишите)
               </p>
             </div>
-            <nav class="social-links" aria-label="Social contacts">
+            <nav class="social-links">
               <a href="https://t.me/pon4ikisdonut" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram">
                 <img src="tg.png" alt="" class="icon icon--social" />
               </a>
@@ -343,7 +330,7 @@
           </div>
           <div class="footer-bottom">
             <span>© <span id="year"></span> pon4ikisdonut</span>
-            <button class="aero-toggle" id="aero-toggle" type="button" aria-pressed="false" aria-label="Включить ретро-стиль" title="Theme toggle">✦</button>
+            <button class="aero-toggle" id="aero-toggle" type="button" aria-pressed="false" aria-label="Включить стиль Windows XP / Frutiger Aero" title="?">✦</button>
             <div class="lang-switch" id="lang-switch">
               <button class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false">
                 <span id="lang-current">RU</span>
@@ -357,11 +344,10 @@
             </div>
           </div>
         </footer>
-
       </div>
     </main>
 
-    <script src="i18n.js?v=9"></script>
+    <script src="i18n.js?v=8"></script>
     <script>
       (function () {
         function updateKyivTime() {
@@ -385,7 +371,68 @@
           setInterval(updateKyivTime, 1000);
         });
       })();
+
+      (function () {
+        const $ = (id) => document.getElementById(id);
+        const audio = $("audio-el"), player = $("music-player"), play = $("mp-play-btn");
+        const name = $("mp-track-name"), artist = $("mp-track-artist"), progress = $("mp-progress");
+        const current = $("mp-cur-time"), duration = $("mp-dur-time"), playlistEl = $("mp-playlist");
+        const volume = $("mp-vol-slider"), mute = $("mp-mute-btn"), queue = $("mp-queue-count");
+        let tracks = [], index = 0, lastVolume = Number(volume.value);
+        const fmt = (seconds) => { seconds = Math.floor(seconds || 0); return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`; };
+        const titleFromFile = (file) => decodeURIComponent(file.split("/").pop()).replace(/\.mp3$/i, "").replace(/[._-]+/g, " ").trim();
+        function setPlaying(on) {
+          play.querySelector(".mp-icon-play").hidden = on;
+          play.querySelector(".mp-icon-pause").hidden = !on;
+          play.setAttribute("aria-label", on ? "Pause" : "Play");
+          player.classList.toggle("is-playing", on);
+        }
+        function renderQueue() {
+          queue.textContent = tracks.length;
+          playlistEl.replaceChildren(...tracks.map((track, i) => {
+            const button = document.createElement("button"); button.type = "button";
+            button.className = "mp-queue-track" + (i === index ? " is-current" : "");
+            button.textContent = `${String(i + 1).padStart(2, "0")}  ${track.title || titleFromFile(track.src)}`;
+            button.addEventListener("click", () => load(i, true)); return button;
+          }));
+        }
+        function load(nextIndex, autoplay = false) {
+          if (!tracks.length) return;
+          index = (nextIndex + tracks.length) % tracks.length;
+          const track = tracks[index]; audio.src = track.src; audio.load();
+          name.textContent = track.title || titleFromFile(track.src);
+          artist.textContent = track.artist || track.album || "LOCAL MP3";
+          progress.value = 0; current.textContent = "0:00"; duration.textContent = "0:00";
+          renderQueue(); if (autoplay) audio.play().catch(() => {});
+        }
+        async function loadLibrary() {
+          try {
+            const response = await fetch("music-library.json", { cache: "no-store" });
+            if (!response.ok) throw new Error(response.status);
+            const library = await response.json();
+            tracks = Array.isArray(library) ? library : library.tracks;
+            if (!Array.isArray(tracks) || !tracks.length) throw new Error("empty library");
+            load(0);
+          } catch (_) {
+            name.textContent = "No MP3 files found"; artist.textContent = "Put files into /music";
+            player.classList.add("is-empty");
+          }
+        }
+        play.addEventListener("click", () => audio.paused ? audio.play().catch(() => {}) : audio.pause());
+        $("mp-prev-btn").addEventListener("click", () => load(index - 1, true));
+        $("mp-next-btn").addEventListener("click", () => load(index + 1, true));
+        $("mp-toggle-playlist").addEventListener("click", (e) => { const open = playlistEl.hidden; playlistEl.hidden = !open; e.currentTarget.setAttribute("aria-expanded", String(open)); });
+        audio.addEventListener("play", () => setPlaying(true)); audio.addEventListener("pause", () => setPlaying(false));
+        audio.addEventListener("ended", () => load(index + 1, true));
+        audio.addEventListener("loadedmetadata", () => duration.textContent = fmt(audio.duration));
+        audio.addEventListener("timeupdate", () => { const value = audio.duration ? audio.currentTime / audio.duration * 100 : 0; progress.value = value; current.textContent = fmt(audio.currentTime); });
+        progress.addEventListener("input", () => { if (audio.duration) audio.currentTime = Number(progress.value) / 100 * audio.duration; });
+        volume.addEventListener("input", () => { audio.volume = Number(volume.value); audio.muted = audio.volume === 0; if (audio.volume) lastVolume = audio.volume; });
+        mute.addEventListener("click", () => { audio.muted = !audio.muted; if (!audio.muted && !audio.volume) { audio.volume = lastVolume; volume.value = lastVolume; } });
+        audio.volume = lastVolume; loadLibrary();
+      })();
     </script>
+
     <script>
       (function () {
         const key = "aero_theme";
@@ -395,13 +442,10 @@
           const setTheme = (enabled) => {
             document.body.classList.toggle("aero-theme", enabled);
             button.setAttribute("aria-pressed", String(enabled));
+            button.setAttribute("aria-label", enabled ? "Вернуть обычный стиль" : "Включить стиль Windows XP / Frutiger Aero");
           };
           setTheme(localStorage.getItem(key) === "1");
-          button.addEventListener("click", () => {
-            const enabled = !document.body.classList.contains("aero-theme");
-            localStorage.setItem(key, enabled ? "1" : "0");
-            setTheme(enabled);
-          });
+          button.addEventListener("click", () => { const enabled = !document.body.classList.contains("aero-theme"); localStorage.setItem(key, enabled ? "1" : "0"); setTheme(enabled); });
         });
       })();
     </script>

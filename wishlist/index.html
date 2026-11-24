@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Список желаний pon4ikisdonut: серверные комплектующие, рабочее место и оборудование."
+      content="Список желаний pon4ikisdonut: серверное железо, комплектующие, рабочее место и гаджеты."
     />
-    <meta name="theme-color" content="#0b0e14" />
+    <meta name="theme-color" content="#0d1117" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../styles.css?v=200" />
+    <link rel="stylesheet" href="../styles.css?v=105" />
   </head>
   <body>
+    <div class="bg-glow"></div>
+
     <main class="page">
       <div class="shell">
 
-        <!-- Header -->
-        <header class="site-header">
+        <header class="site-header animate-in">
           <div class="identity">
             <a href="/" class="avatar" title="На главную">
               <img src="../ava.jpg" alt="Avatar" class="avatar-img" />
@@ -44,33 +45,24 @@
           </div>
         </header>
 
-        <!-- Navigation -->
-        <nav class="site-nav" aria-label="Main navigation">
-          <a href="/" class="nav-link">Главная</a>
-          <a href="/#about" class="nav-link">О себе</a>
-          <a href="/#projects" class="nav-link">Проекты</a>
-          <a href="/#stack" class="nav-link">Железо &amp; Стек</a>
-          <a href="/wishlist/" class="nav-link active nav-link--accent">Wishlist 🎁</a>
-        </nav>
-
-        <!-- Top Bar with Prominent Contact Button as requested -->
-        <div class="wishlist-top-bar">
+        <!-- Prominent top bar with Contact button as requested -->
+        <div class="wishlist-top-bar animate-in">
           <div class="wishlist-top-info">
-            <div class="wishlist-top-title">// Wishlist &amp; Hardware Targets</div>
+            <div class="wishlist-top-title">Список желаний / Хотелки</div>
             <div class="wishlist-top-sub">
-              Комплектующие для серверной стойки, сборки воркстейшна, апгрейда рабочего места и сетевой инфраструктуры. Если хотите поддержать проект — пишите в Telegram!
+              Железо, серверные комплектующие, девайсы и софт для проектов и рабочего места. Если хотите поддержать или сделать подарок — пишите!
             </div>
           </div>
           <a class="wishlist-contact-btn" href="https://t.me/pon4ikisdonut" target="_blank" rel="noopener">
             <img src="../tg.png" alt="" class="icon--contact" />
-            <span>Связаться со мной (@pon4ikisdonut)</span>
+            <span>Связаться со мной</span>
           </a>
         </div>
 
         <!-- Section 1: Сервер & Комплектующие ПК -->
-        <section class="section" id="server-hardware">
+        <section class="section animate-in" id="workstation-hardware">
           <div class="wishlist-section-header">
-            <h2 class="wishlist-section-title">// 01 · СЕРВЕР &amp; ПК (LGA3647 WORKSTATION)</h2>
+            <h2 class="wishlist-section-title">Сервер &amp; Комплектующие ПК</h2>
             <span class="status-pill">8 позиций</span>
           </div>
           <div class="wishlist-grid">
@@ -84,7 +76,7 @@
                 <span class="wishlist-card-tag">CPU · LGA3647</span>
               </header>
               <p class="wishlist-card-desc">
-                20 ядер / 40 потоков, 2.40 GHz (Turbo до 3.70 GHz), 27.5 MB L3 Cache, TDP 150W. Мощный серверный процессор под компиляцию, OSDev и виртуализацию.
+                20 ядер / 40 потоков, базовая частота 2.40 GHz (Turbo до 3.70 GHz), кэш 27.5 MB L3, TDP 150W. Мощный серверный камень под компиляцию, OSDev и виртуализацию.
               </p>
             </article>
 
@@ -97,7 +89,7 @@
                 <span class="wishlist-card-tag">Материнская плата</span>
               </header>
               <p class="wishlist-card-desc">
-                Серверная плата на чипсете Intel C621: сокет LGA 3647, 8 слотов DDR4 ECC RDIMM/LRDIMM, 4 слота PCIe Gen3 x16, удаленный BMC / IPMI (AST2500).
+                Серверная плата на чипсете Intel C621: сокет LGA3647, 8 слотов DDR4 ECC RDIMM/LRDIMM, 4 слота PCIe Gen3 x16, удаленное управление IPMI 2.0 (ASPEED AST2500).
               </p>
             </article>
 
@@ -110,7 +102,7 @@
                 <span class="wishlist-card-tag">RAM · 6-Channel</span>
               </header>
               <p class="wishlist-card-desc">
-                Комплект регистровой памяти 6 планок по 16 ГБ DDR4-2666 MHz с контролем четности (ECC Registered) для работы в честном 6-канальном режиме платформы C621.
+                Комплект регистровой серверной памяти 6 планок по 16 ГБ DDR4-2666 MHz с контролем четности (ECC Registered) для полной загрузки 6 каналов памяти сокета LGA3647.
               </p>
             </article>
 
@@ -123,7 +115,7 @@
                 <span class="wishlist-card-tag">GPU · 16GB GDDR6</span>
               </header>
               <p class="wishlist-card-desc">
-                Флагманское исполнение Nitro+ от Sapphire: охлаждение Tri-X с тремя вентиляторами на двойных шарикоподшипниках, массивный радиатор и ARGB.
+                Топовое исполнение Nitro+ от Sapphire: охлаждение Tri-X с тремя вентиляторами на двойных шарикоподшипниках, жесткий металлический бэкплейт и ARGB-подсветка.
               </p>
             </article>
 
@@ -136,7 +128,7 @@
                 <span class="wishlist-card-tag">SSD · NVMe M.2</span>
               </header>
               <p class="wishlist-card-desc">
-                Скоростной накопитель PCIe 3.0 x4 с собственной памятью Samsung V-NAND 3-bit MLC, DRAM-буфером LPDDR4 и скоростью чтения до 3500 МБ/с.
+                Проверенный быстрый накопитель PCIe 3.0 x4 с собственной памятью Samsung V-NAND 3-bit MLC, DRAM-буфером LPDDR4 и скоростью чтения до 3500 МБ/с.
               </p>
             </article>
 
@@ -146,10 +138,10 @@
               </div>
               <header class="wishlist-card-header">
                 <h3 class="wishlist-card-title">PCCooler TS700D Black (TS700D-BKNWXX-GL)</h3>
-                <span class="wishlist-card-tag">Кулер · LGA3647</span>
+                <span class="wishlist-card-tag">Кулер · Workstation</span>
               </header>
               <p class="wishlist-card-desc">
-                Двухбашенный кулер с увеличенной медной подошвой под крупные теплораспределительные крышки процессоров LGA3647/4677 и SP3/TR4.
+                Двухбашенный кулер с увеличенной медной базой под габариты теплораспределительной крышки Intel LGA3647/4677 и AMD TR4/SP3, два ШИМ-вентилятора.
               </p>
             </article>
 
@@ -162,7 +154,7 @@
                 <span class="wishlist-card-tag">БП · 80+ Gold / ATX 3.1</span>
               </header>
               <p class="wishlist-card-desc">
-                Полностью модульный блок питания 850W с сертификатом 80 PLUS Gold, поддержкой стандартов ATX 3.1 и PCIe 5.1 (кабель 12V-2x6) и бесшумным вентилятором.
+                Полностью модульный блок питания мощностью 850W с сертификатом 80 PLUS Gold, поддержкой стандартов ATX 3.1 и PCIe 5.1 (разъем 12V-2x6) и бесшумным вентилятором.
               </p>
             </article>
 
@@ -175,7 +167,7 @@
                 <span class="wishlist-card-tag">Корпус · All Black</span>
               </header>
               <p class="wishlist-card-desc">
-                Компактный строгий черный корпус с перфорированными сетчатыми панелями для отличной циркуляции воздуха и боковым закаленным стеклом.
+                Стильный строгий корпус с перфорированными сетчатыми панелями для максимального продува компонентов, закаленным боковым стеклом и удобным кабель-менеджментом.
               </p>
             </article>
 
@@ -183,9 +175,9 @@
         </section>
 
         <!-- Section 2: Рабочее место, Мониторы & Аудио -->
-        <section class="section" id="workspace-audio">
+        <section class="section animate-in" id="workspace-audio">
           <div class="wishlist-section-header">
-            <h2 class="wishlist-section-title">// 02 · РАБОЧЕЕ МЕСТО, МОНИТОРЫ &amp; АУДИО</h2>
+            <h2 class="wishlist-section-title">Рабочее место, Мониторы &amp; Аудио</h2>
             <span class="status-pill">4 позиции</span>
           </div>
           <div class="wishlist-grid">
@@ -199,7 +191,7 @@
                 <span class="wishlist-card-tag">3× 4K UHD · 144Hz</span>
               </header>
               <p class="wishlist-card-desc">
-                Тройка 27-дюймовых мониторов Samsung Odyssey G70D: матрица Fast IPS, 4K UHD (3840×2160), 144 Гц, 1 мс GtG, VESA DisplayHDR 400.
+                Тройка 27-дюймовых мониторов Samsung Odyssey G70D: Fast IPS матрица, 4K UHD (3840×2160), 144 Гц, отклик 1 мс GtG, VESA DisplayHDR 400 и CoreSync подсветка.
               </p>
             </article>
 
@@ -212,7 +204,7 @@
                 <span class="wishlist-card-tag">Для 3 мониторов · Газлифт</span>
               </header>
               <p class="wishlist-card-desc">
-                Настольный кронштейн на три экрана (17"–27", VESA 75/100) с газлифтом на каждом колене, регулировкой высоты, наклона, поворота и USB 3.0.
+                Массивный настольный кронштейн на три экрана (17"–27", VESA 75/100) с газлифтом на каждом колене, регулировкой высоты, наклона, поворота и встроенными портами USB 3.0.
               </p>
             </article>
 
@@ -226,7 +218,7 @@
                 <span class="wishlist-card-tag">Аудиоинтерфейс + Наушники</span>
               </header>
               <p class="wishlist-card-desc">
-                Студийный аудиотракт: интерфейс Scarlett 4th Gen с динамическим диапазоном 120 дБ + эталонные закрытые студийные наушники на 80 Ом.
+                Сетап для идеального мониторинга звука: внешняя аудиокарта Scarlett 4-го поколения с динамическим диапазоном 120 дБ и легендарные закрытые студийные наушники на 80 Ом.
               </p>
             </article>
 
@@ -239,7 +231,7 @@
                 <span class="wishlist-card-tag">TKL · BlackPink</span>
               </header>
               <p class="wishlist-card-desc">
-                Беспроводная TKL-клавиатура в расцветке BlackPink: батарея 12000 мАч, плавные линейные свитчи Arctic Latte, RGB и 3 режима подключения (2.4G/BT/Type-C).
+                Беспроводная TKL-клавиатура в расцветке BlackPink, мощная батарея 12000 мАч, плавные линейные свитчи Arctic Latte, RGB подсветка и подключение по 2.4G, Bluetooth и Type-C.
               </p>
             </article>
 
@@ -247,9 +239,9 @@
         </section>
 
         <!-- Section 3: Сетевое оборудование & Питание -->
-        <section class="section" id="network-power">
+        <section class="section animate-in" id="network-power">
           <div class="wishlist-section-header">
-            <h2 class="wishlist-section-title">// 03 · СЕТЕВОЕ ОБОРУДОВАНИЕ &amp; ПИТАНИЕ</h2>
+            <h2 class="wishlist-section-title">Сетевое оборудование &amp; Питание</h2>
             <span class="status-pill">4 позиции</span>
           </div>
           <div class="wishlist-grid">
@@ -263,7 +255,7 @@
                 <span class="wishlist-card-tag">Роутер · 10x 1G + 10G SFP+</span>
               </header>
               <p class="wishlist-card-desc">
-                Маршрутизатор RouterOS: 4 ядра Cortex A15 по 1.4 GHz, 1 ГБ RAM, 10x 1Gbps портов, порт SFP+ 10Gbps, двухдиапазонный Wi-Fi 5 и металлический корпус.
+                Высокопроизводительный роутер RouterOS: 4 ядра Cortex A15 по 1.4 GHz, 1 ГБ RAM, 10x 1Gbps портов, порт SFP+ 10Gbps, двухдиапазонный Wi-Fi 5 и надежный матовый металлический корпус.
               </p>
             </article>
 
@@ -276,7 +268,7 @@
                 <span class="wishlist-card-tag">Трансивер 10G SFP+ to RJ45</span>
               </header>
               <p class="wishlist-card-desc">
-                Медный 6-скоростной трансивер SFP+ в RJ-45 (до 10 Gbps) для работы по витой паре категории Cat6/Cat6a на расстояниях до 200 метров.
+                Медный модуль SFP+ в RJ-45, поддерживающий автосогласование скоростей до 10 Gbps по витой паре категории Cat6/Cat6a на расстояниях до 200 метров.
               </p>
             </article>
 
@@ -289,7 +281,7 @@
                 <span class="wishlist-card-tag">Сетевая карта · 10/40G</span>
               </header>
               <p class="wishlist-card-desc">
-                Двухпортовый серверный сетевой адаптер PCIe 3.0 x8 с поддержкой 10G/40G, аппаратной разгрузки RoCE и комплектным прямым медным DAC-кабелем SFP+.
+                Двухпортовый серверный сетевой адаптер PCIe 3.0 x8 с поддержкой 10G/40G, аппаратной разгрузки RoCE/Overlay Networks и комплектным медным DAC-кабелем SFP+ to SFP+.
               </p>
             </article>
 
@@ -302,7 +294,7 @@
                 <span class="wishlist-card-tag">On-Line ИБП · 1600W</span>
               </header>
               <p class="wishlist-card-desc">
-                Онлайн-ИБП топологии On-Line двойного преобразования мощностью 2000 ВА / 1600 Вт с чистой выходной синусоидой для защиты стойки и ПК.
+                Надежный онлайн-ИБП топологии On-Line двойного преобразования мощностью 2000 ВА / 1600 Вт с чистой выходной синусоидой для защиты серверного оборудования и ПК.
               </p>
             </article>
 
@@ -310,9 +302,9 @@
         </section>
 
         <!-- Section 4: Портативное, SBC & Подписки -->
-        <section class="section" id="mobile-sbc">
+        <section class="section animate-in" id="mobile-sbc">
           <div class="wishlist-section-header">
-            <h2 class="wishlist-section-title">// 04 · ПОРТАТИВНОЕ, SBC &amp; ПОДПИСКИ</h2>
+            <h2 class="wishlist-section-title">Портативное, SBC &amp; Подписки</h2>
             <span class="status-pill">4 позиции</span>
           </div>
           <div class="wishlist-grid">
@@ -326,7 +318,7 @@
                 <span class="wishlist-card-tag">Ноутбук · 240Hz OLED</span>
               </header>
               <p class="wishlist-card-desc">
-                Белоснежный флагман: процессор AMD Ryzen AI 7 450, видеокарта NVIDIA GeForce RTX 5060 8GB GDDR7, 32GB LPDDR5X и 16" 2.5K 240Hz OLED дисплей.
+                Премиальный ноутбук в цвете Glacier White: процессор AMD Ryzen AI 7 450, видеокарта NVIDIA GeForce RTX 5060 8GB GDDR7, 32GB LPDDR5X, 1TB SSD и 16" 2.5K 240Hz OLED экран.
               </p>
             </article>
 
@@ -336,10 +328,10 @@
               </div>
               <header class="wishlist-card-header">
                 <h3 class="wishlist-card-title">Google Pixel 10 Pro XL 16/512GB Porcelain</h3>
-                <span class="wishlist-card-tag">Смартфон · Porcelain</span>
+                <span class="wishlist-card-tag">Смартфон · Флагман</span>
               </header>
               <p class="wishlist-card-desc">
-                Флагман от Google в светлом фарфоровом исполнении: новый процессор Tensor, 16 ГБ оперативной памяти, 512 ГБ памяти и чистый Android.
+                Флагманский смартфон Google в светлом фарфоровом цвете (Porcelain): новый процессор Tensor, 16 ГБ оперативной памяти, 512 ГБ встроенного хранилища и чистый Android.
               </p>
             </article>
 
@@ -352,7 +344,7 @@
                 <span class="wishlist-card-tag">SBC · Nano-ITX Arm v9</span>
               </header>
               <p class="wishlist-card-desc">
-                Компактная плата 120×120 мм Nano-ITX на высокопроизводительном процессоре Cix P1 (Arm v9) с линиями PCIe, разъемами M.2 NVMe и поддержкой нескольких дисплеев.
+                Компактная плата 120×120 мм Nano-ITX на базе чипа Cix P1 (архитектура Arm v9), широкие возможности расширения PCIe, поддержка M.2 NVMe и вывод на несколько дисплеев.
               </p>
             </article>
 
@@ -362,7 +354,7 @@
               </div>
               <header class="wishlist-card-header">
                 <h3 class="wishlist-card-title">Google AI Ultra на 5 лет</h3>
-                <span class="wishlist-card-tag">Подписка · Gemini Ultra</span>
+                <span class="wishlist-card-tag">Подписка · AI / Cloud</span>
               </header>
               <p class="wishlist-card-desc">
                 Пятилетняя подписка на самый мощный уровень искусственного интеллекта от Google: передовые модели Gemini Ultra, миллионные контекстные окна и облачные мощности.
@@ -373,15 +365,15 @@
         </section>
 
         <!-- Footer -->
-        <footer class="site-footer" id="contacts">
+        <footer class="site-footer animate-in" id="contacts">
           <div class="footer-main">
             <div class="footer-left">
-              <div class="footer-title">// Contacts</div>
+              <div class="footer-title">Contacts</div>
               <p class="section-text subtle">
-                По любым вопросам или поддержке проектов пишите в Telegram.
+                По любым вопросам, предложениям или подаркам пишите в Telegram.
               </p>
             </div>
-            <nav class="social-links" aria-label="Social contacts">
+            <nav class="social-links">
               <a href="https://t.me/pon4ikisdonut" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram">
                 <img src="../tg.png" alt="" class="icon icon--social" />
               </a>
@@ -395,7 +387,7 @@
           </div>
           <div class="footer-bottom">
             <span>© <span id="year"></span> pon4ikisdonut</span>
-            <button class="aero-toggle" id="aero-toggle" type="button" aria-pressed="false" aria-label="Включить ретро-стиль" title="Theme toggle">✦</button>
+            <button class="aero-toggle" id="aero-toggle" type="button" aria-pressed="false" aria-label="Включить стиль Windows XP / Frutiger Aero" title="?">✦</button>
           </div>
         </footer>
 
@@ -426,6 +418,7 @@
         });
       })();
     </script>
+
     <script>
       (function () {
         const key = "aero_theme";
@@ -435,6 +428,7 @@
           const setTheme = (enabled) => {
             document.body.classList.toggle("aero-theme", enabled);
             button.setAttribute("aria-pressed", String(enabled));
+            button.setAttribute("aria-label", enabled ? "Вернуть обычный стиль" : "Включить стиль Windows XP / Frutiger Aero");
           };
           setTheme(localStorage.getItem(key) === "1");
           button.addEventListener("click", () => {
