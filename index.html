@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Личный сайт pon4ikisdonut (Евгений): вайбкодинг, линуксоидство, соревновательный оверклокинг HWBOT, OSDev (KyroOS), каталог femboy.pp.ua и тех. администрирование."
+      content="Личный сайт pon4ikisdonut (Евгений): вайбкодинг, линуксоидство, соревновательный оверклокинг HWBOT, OSDev (KyroOS), каталог femboy.pp.ua и железные эксперименты."
     />
     <meta name="color-scheme" content="dark light" />
     <meta name="theme-color" content="#0d1117" />
@@ -22,7 +22,7 @@
       })();
     </script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=115" />
+    <link rel="stylesheet" href="styles.css?v=116" />
   </head>
   <body>
     <div class="bg-glow"></div>
@@ -38,7 +38,7 @@
         <!-- Header / Identity -->
         <header class="site-header animate-in">
           <div class="identity">
-            <div class="avatar" title="Аватарка pon4ikisdonut в Telegram">
+            <div class="avatar" title="pon4ikisdonut">
               <img src="ava.jpg" alt="pon4ikisdonut avatar" class="avatar-img" />
             </div>
             <div class="identity-text">
@@ -70,15 +70,21 @@
           </div>
         </header>
 
-        <!-- Section: Dossier / About (From SaberPedia) -->
+        <!-- Section: About / Bio -->
         <section class="section animate-in" id="about">
-          <h2 class="section-title">Досье &amp; О себе</h2>
+          <h2 class="section-title">Обо мне</h2>
           <div class="section-body">
             <div class="about-content">
+              <p class="section-text" style="font-size: 15px; line-height: 1.7;">
+                Привет, я <strong>Евгений</strong> (в сети более известен как <strong>pon4ikisdonut</strong>, либо <em>pon4ikisadonut</em>).
+                Занимаюсь вайбкодингом, низкоуровневой разработкой на C, системным администрированием и OSDev — разрабатываю собственную 64-битную операционную систему KyroOS.
+                Увлекаюсь соревновательным оверклокингом на HWBOT, сборкой нетипичного серверного железа и линуксоидством.
+                Модерирую чат Марка Аддерли, периодически зависаю в сообществе DiabloSat. В интернете открыто позиционирую себя как фембоя.
+              </p>
               <div class="chips">
                 <span class="chip" title="C / OSDev / Низкоуровневая разработка">
                   <img src="c.svg" alt="" class="icon icon--chip" />
-                  <span>C</span>
+                  <span>C / OSDev</span>
                 </span>
                 <span class="chip" title="Python">
                   <img src="python.svg" alt="" class="icon icon--chip" />
@@ -88,15 +94,13 @@
                   <img src="sysadm.png" alt="" class="icon icon--chip" />
                   <span>Sysadmin</span>
                 </span>
+                <span class="chip">Artix Linux (dinit)</span>
                 <span class="chip">KernelSU</span>
-                <span class="chip">HWBOT</span>
+                <span class="chip">HWBOT Top-8</span>
               </div>
-              <p class="section-text">
-                Украинский интернет-пользователь, вайбкодер, линуксоид, энтузиаст нетипичного компьютерного оборудования, экстремального оверклокинга и технический администратор Minecraft-проектов LastSMP и LHC. Модератор в чате Марка Аддерли, периодически участвую в сообществе DiabloSat. В интернете открыто позиционирую себя как фембоя.
-              </p>
             </div>
 
-            <!-- SaberPedia Dossier Grid -->
+            <!-- Dossier Grid -->
             <div class="dossier-grid">
               <div class="dossier-card">
                 <span class="dossier-label">Настоящее имя</span>
@@ -111,7 +115,7 @@
                 <span class="dossier-val">Киев, Украина</span>
               </div>
               <div class="dossier-card">
-                <span class="dossier-label">Локация</span>
+                <span class="dossier-label">Место жительства</span>
                 <span class="dossier-val">г. Нежин, Черниговская обл.</span>
               </div>
               <div class="dossier-card">
@@ -126,12 +130,6 @@
                 <span class="dossier-label">Планы на будущее</span>
                 <span class="dossier-val">2027 г. — Швеция / Канада</span>
               </div>
-              <div class="dossier-card">
-                <span class="dossier-label">Источник информации</span>
-                <span class="dossier-val">
-                  <a href="https://saberpedia.no/Pon4ikisdonut" target="_blank" rel="noopener">Сейберпедия ↗</a>
-                </span>
-              </div>
             </div>
           </div>
         </section>
@@ -141,7 +139,7 @@
           <h2 class="section-title">Соревновательный оверклокинг (HWBOT)</h2>
           <div class="section-body">
             <p class="section-text">
-              Участие в рейтинговых дисциплинах соревновательного оверклокинга на платформе <strong>HWBOT</strong>. Основной бенчмарк-снаряд — видеокарта Sapphire Radeon RX 480 Nitro+ 8GB.
+              Участвую в рейтинговых дисциплинах соревновательного оверклокинга на платформе <strong>HWBOT</strong>. Мой основной бенчмарк-снаряд — видеокарта Sapphire Radeon RX 480 Nitro+ 8GB.
             </p>
             <div class="hwbot-grid">
               <div class="hwbot-card">
@@ -164,7 +162,7 @@
                   <span>VRAM: 2250 МГц</span>
                 </div>
                 <p class="project-text subtle">
-                  Выжатый максимум из Polaris 10: частота памяти разогнана до 9000 МГц эффективных.
+                  Выжал максимум из чипа Polaris 10: частота памяти разогнана до 9000 МГц эффективных.
                 </p>
               </div>
 
@@ -180,7 +178,7 @@
                 </p>
                 <div class="project-actions">
                   <a class="project-button" href="https://hwbot.org/users/pon4ikisadonut" target="_blank" rel="noopener">
-                    <span>Профиль на HWBOT</span>
+                    <span>Мой профиль на HWBOT</span>
                     <img src="strelka.png" alt="" class="icon icon--external" />
                   </a>
                 </div>
@@ -191,7 +189,7 @@
 
         <!-- Section: Hardware & Setup (Frankenstein Rig) -->
         <section class="section animate-in" id="stack">
-          <h2 class="section-title">Сетап &amp; Железо (Dell Frankenstein)</h2>
+          <h2 class="section-title">Сетап &amp; Моё железо</h2>
           <div class="section-body">
             <div class="hardware-grid">
 
@@ -212,12 +210,6 @@
                     <li><strong>Накопители:</strong> Patriot Burst Elite 120GB, ST3250318AS 232GB, 2x WD 320GB</li>
                   </ul>
                 </div>
-
-                <!-- Emergency Generator Profile Callout -->
-                <div class="generator-callout">
-                  <div class="generator-callout-title">⚡ Профиль работы от генератора (Блэкаут)</div>
-                  Реализован специальный режим пониженного энергопотребления для автономности: процессор Core i7-4790 программно зажат до <strong>~25 Вт</strong>, а лимит мощности видеокарты RX 480 снижен на <strong>-35%</strong>.
-                </div>
               </div>
 
               <!-- Software & DualBoot -->
@@ -229,7 +221,7 @@
                 <div class="hw-body">
                   <ul>
                     <li><strong>Основная система (Linux):</strong> <span class="badge-update">Artix Linux</span> с системой инициализации <code>dinit</code> и рабочим столом <code>Xfce4</code>. Никакого тяжелого systemd.</li>
-                    <li><strong>Вторая система (Windows):</strong> Windows 10 Pro 22H2 — сохраняется исключительно из-за пула накопителей <code>Microsoft Storage Spaces</code>, который нельзя безболезненно перенести в Linux без риска потери данных.</li>
+                    <li><strong>Вторая система (Windows):</strong> Windows 10 Pro 22H2 — держу исключительно из-за пула дисков <code>Microsoft Storage Spaces</code>, который пока не перенести в Linux без форматирования и риска потери данных.</li>
                     <li><strong>Bootloader:</strong> GRUB DualBoot</li>
                   </ul>
                 </div>
@@ -239,12 +231,12 @@
               <div class="hardware-item">
                 <div class="hw-summary-mock">
                   <span class="hw-title">Мобильный арсенал</span>
-                  <span class="hw-meta">Pixel 6 Pro + MacBook Air</span>
+                  <span class="hw-meta">Pixel 6 Pro + MacBook</span>
                 </div>
                 <div class="hw-body">
                   <ul>
-                    <li><strong>Смартфон:</strong> Google Pixel 6 Pro (Stormy Black, 128GB, Android 17). Разблокированный загрузчик, root через <code>KernelSU</code>. Примечание: физически не работает NFC и датчик приближения.</li>
-                    <li><strong>Походный ноутбук:</strong> MacBook Air 11″ (Early 2014) — используется как легкая печатная машинка в поездках (несмотря на глубокий скепсис к экосистеме Apple).</li>
+                    <li><strong>Смартфон:</strong> Google Pixel 6 Pro (Stormy Black, 128GB, Android 17). Разблокированный загрузчик, root через <code>KernelSU</code>. (Модуль NFC и датчик приближения физически не работают).</li>
+                    <li><strong>Ноутбук:</strong> MacBook Air 11″ (Early 2014) — <span class="badge-subtle" style="font-weight: 700;">сейчас мёртвый</span>, валяется без признаков жизни (да и в целом Apple я презираю).</li>
                   </ul>
                 </div>
               </div>
@@ -272,7 +264,7 @@
 
         <!-- Section: Projects -->
         <section class="section animate-in" id="projects">
-          <h2 class="section-title">Проекты &amp; Разработка</h2>
+          <h2 class="section-title">Мои проекты</h2>
           <div class="projects-grid">
 
             <article class="project-card">
@@ -283,10 +275,10 @@
                 <span class="project-tag">OSDev · x86_64</span>
               </header>
               <p class="project-text">
-                64-битная операционная система, разрабатываемая с нуля. Загрузчик Limine, вывод через framebuffer, на стадии ранней альфы.
+                64-битная операционная система, которую я пишу с нуля. Загрузчик Limine, вывод через framebuffer, ранняя альфа.
               </p>
               <p class="project-text subtle">
-                Разрабатывается с применением ИИ — сам процесс создания автор неформально характеризует как <em>«навайбкоживание»</em>.
+                Разрабатываю с применением ИИ — сам процесс создания неформально называю <em>«навайбкоживание»</em>.
               </p>
               <div class="project-actions">
                 <a class="project-button" href="https://github.com/kyrosystems/KyroOS" target="_blank" rel="noopener">
@@ -304,10 +296,10 @@
                 <span class="project-tag">Каталог · Web</span>
               </header>
               <p class="project-text">
-                Тематический интернет-каталог, посвящённый фембой-культуре. Ограниченный список с ручной модерацией.
+                Мой тематический интернет-каталог, посвящённый фембой-культуре. Список с ручной модерацией.
               </p>
               <p class="project-text subtle">
-                Добавление новых участников происходит вручную: желающие попасть в каталог обращаются непосредственно в Telegram.
+                Добавление новых участников модерирую вручную: желающие попасть в каталог пишут мне напрямую в Telegram.
               </p>
               <div class="project-actions">
                 <a class="project-button" href="https://femboy.pp.ua/" target="_blank" rel="noopener">
@@ -315,19 +307,6 @@
                   <img src="strelka.png" alt="" class="icon icon--external" />
                 </a>
               </div>
-            </article>
-
-            <article class="project-card">
-              <header class="project-header">
-                <h3 class="project-title">LastSMP &amp; LHC</h3>
-                <span class="project-tag">Minecraft · Инфраструктура</span>
-              </header>
-              <p class="project-text">
-                Техническое администрирование Minecraft-проектов LastSMP и LHC: настройка серверов, сетей, мониторинг и обслуживание инфраструктуры.
-              </p>
-              <p class="project-text subtle">
-                Также модерирование чата Марка Аддерли и неформальное участие в DiabloSat.
-              </p>
             </article>
 
             <article class="project-card">
@@ -359,7 +338,7 @@
                 <span class="project-tag">Хотелки · Железо</span>
               </header>
               <p class="project-text">
-                Список желаний и планируемых апгрейдов: серверная платформа LGA3647 Xeon Gold 6148, 96GB DDR4 ECC REG, RX 7800 XT, 3x монитора Samsung Odyssey G7 и сетевое 10G оборудование.
+                Мой список желаний и планируемых апгрейдов: серверная платформа LGA3647 Xeon Gold 6148, 96GB DDR4 ECC REG, RX 7800 XT, 3x монитора Samsung Odyssey G7 и сетевое 10G железо.
               </p>
               <div class="project-actions">
                 <a class="project-button" href="/wishlist/">
@@ -369,13 +348,13 @@
               </div>
             </article>
 
-            <article class="project-card">
+            <article class="project-card" style="grid-column: 1 / -1;">
               <header class="project-header">
-                <h3 class="project-title">Telegram-каналы</h3>
+                <h3 class="project-title">Мои Telegram-каналы</h3>
                 <span class="project-tag">Блог · Щитпостинг</span>
               </header>
               <p class="project-text">
-                Ведение личного bio-канала и щитпост-переходника: мемы, мысли, железные эксперименты и повседневный движ без цензуры.
+                Веду личный bio-канал и щитпост-переходник: делюсь мыслями, мемами, экспериментами с железом и кодом.
               </p>
               <div class="project-actions">
                 <a class="project-button" href="https://t.me/pon4ikbio" target="_blank" rel="noopener">
@@ -392,12 +371,12 @@
           </div>
         </section>
 
-        <!-- Section: Hall of Hate (Technical Preferences & Anti-Preferences) -->
+        <!-- Section: Hall of Hate (Technical Preferences) -->
         <section class="section animate-in" id="hate">
-          <h2 class="section-title">Технические предпочтения &amp; Хейт-лист</h2>
+          <h2 class="section-title">Мой хейт-лист &amp; Антипатии</h2>
           <div class="section-body">
             <p class="section-text">
-              Список технологий и платформ, вызывающих выраженное отторжение на основе личного опыта эксплуатации и политики производителей:
+              Технологии и решения, которые вызывают у меня искреннее отторжение на личном опыте:
             </p>
             <div class="hate-grid">
 
@@ -417,7 +396,7 @@
                   <span class="hate-badge">❌ Хейт</span>
                 </div>
                 <p class="hate-desc">
-                  Чрезмерно тяжелый комбайн, долгая загрузка и избыточная ресурсоёмкость. Альтернатива автора — легкий <code>dinit</code> в Artix Linux.
+                  Чрезмерно тяжелый комбайн, долгая загрузка и избыточная ресурсоёмкость. Мой выбор — легкий <code>dinit</code> в Artix Linux.
                 </p>
               </div>
 
@@ -447,7 +426,7 @@
                   <span class="hate-badge">❌ Хейт</span>
                 </div>
                 <p class="hate-desc">
-                  Субъективная антипатия к десктопным Ryzen. При этом выраженное уважение к AMD EPYC, Threadripper, легендарным FX и видеокартам Radeon/Instinct!
+                  Субъективная антипатия к десктопным Ryzen. При этом искреннее уважение к AMD EPYC, Threadripper, легендарным FX и видеокартам Radeon/Instinct!
                 </p>
               </div>
 
@@ -501,8 +480,7 @@
 
           <div class="footer-bottom">
             <span>© <span id="year"></span> pon4ikisdonut · Все права отобраны</span>
-            <span style="color: var(--text-softer); font-size: 10px;">Подсказка: введи <code>frutigeraero</code> на клавиатуре</span>
-            <button class="aero-toggle" id="aero-toggle" type="button" aria-pressed="false" aria-label="Включить стиль Windows XP / Frutiger Aero" title="Пасхалка: Frutiger Aero">✦</button>
+            <button class="aero-toggle" id="aero-toggle" type="button" aria-pressed="false" aria-label="Включить стиль Windows XP / Frutiger Aero" title="Пасхалка">✦</button>
           </div>
         </footer>
 

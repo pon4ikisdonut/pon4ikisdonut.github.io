@@ -461,15 +461,8 @@ html[data-theme="light"] .theme-icon-moon { display: none; }
 
 .about-content {
   display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-@media (max-width: 700px) {
-  .about-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  flex-direction: column;
+  gap: 12px;
 }
 
 .chips {
