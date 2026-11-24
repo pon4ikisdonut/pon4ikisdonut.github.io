@@ -9,9 +9,21 @@
       data-i18n-attr="content:meta.desc"
       content="гагагага да да это мой сайт я крутой да да ахахахахах."
     />
+    <meta name="color-scheme" content="dark light" />
     <meta name="theme-color" content="#0d1117" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("site_theme") || "dark";
+          document.documentElement.setAttribute("data-theme", t);
+          if (localStorage.getItem("aero_theme") === "1") {
+            document.documentElement.classList.add("aero-active");
+          }
+        } catch (e) {}
+      })();
+    </script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=100" />
+    <link rel="stylesheet" href="styles.css?v=110" />
   </head>
   <body>
     <div class="bg-glow"></div>
@@ -39,6 +51,12 @@
           </div>
 
           <div class="header-right">
+            <div class="header-actions">
+              <button class="theme-toggle-btn" id="theme-toggle" type="button" aria-label="Переключить тему" title="Переключить тему">
+                <svg class="theme-icon-moon" viewBox="0 0 24 24"><path d="M12.3 2a10 10 0 0 0-.19 20 10 10 0 0 0 8.39-4.54.5.5 0 0 0-.44-.76 7.5 7.5 0 0 1-7.76-7.76.5.5 0 0 0-.76-.44A9.92 9.92 0 0 0 12.3 2z"/></svg>
+                <svg class="theme-icon-sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5a1 1 0 0 0 1-1V.5a1 1 0 0 0-2 0V1a1 1 0 0 0 1 1zm0 20a1 1 0 0 0-1 1v.5a1 1 0 0 0 2 0V23a1 1 0 0 0-1-1zm10-10a1 1 0 0 0 1-1h.5a1 1 0 0 0 0-2H23a1 1 0 0 0-1 1zm-20 0a1 1 0 0 0-1-1H.5a1 1 0 0 0 0 2H1a1 1 0 0 0 1-1zm16.95-7.05a1 1 0 0 0 1.41-1.41l-.35-.36a1 1 0 1 0-1.42 1.42l.36.35zm-14.14 14.14a1 1 0 0 0-1.41 1.41l.35.36a1 1 0 0 0 1.42-1.42l-.36-.35zm14.14 0a1 1 0 0 0-1.41-1.41l-.36.35a1 1 0 1 0 1.42 1.42l.35-.36zM4.61 4.61a1 1 0 0 0 1.41 1.41l.36-.35a1 1 0 0 0-1.42-1.42l-.35.36z"/></svg>
+              </button>
+            </div>
             <div class="status-block">
               <div class="status-indicator">
                 <span class="dot"></span>
@@ -433,21 +451,6 @@
       })();
     </script>
 
-    <script>
-      (function () {
-        const key = "aero_theme";
-        document.addEventListener("DOMContentLoaded", function () {
-          const button = document.getElementById("aero-toggle");
-          if (!button) return;
-          const setTheme = (enabled) => {
-            document.body.classList.toggle("aero-theme", enabled);
-            button.setAttribute("aria-pressed", String(enabled));
-            button.setAttribute("aria-label", enabled ? "Вернуть обычный стиль" : "Включить стиль Windows XP / Frutiger Aero");
-          };
-          setTheme(localStorage.getItem(key) === "1");
-          button.addEventListener("click", () => { const enabled = !document.body.classList.contains("aero-theme"); localStorage.setItem(key, enabled ? "1" : "0"); setTheme(enabled); });
-        });
-      })();
-    </script>
+    <script src="theme-cheat.js?v=1"></script>
   </body>
 </html>
